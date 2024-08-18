@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QuickList</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.png" alt="Logo QuickList">
+        </header>
+        <main>
+            <h1>Compras da semana</h1>
+
+            <form>
+                <input type="text" placeholder="Adicione um novo item" id="newItem" />
+                <button type="submit" id="btn" class="button">Adicionar Item</button>
+            </form>
+
+            <ul class="list" role="listbox">
+
+                <li id="item1" class="item">
+                    <div class="content-list">
+                        <input type="radio">
+                        <label for="">Macarrão</label>
+                    </div>
+                    <div class="image">
+                        <img src="/images/Frame-3.svg" alt="Deletar">
+                    </div>
+                </li>
+                <li id="item2" class="item">
+                    <div class="content-list">
+                        <input type="radio">
+                        <label for="">Macarrão</label>
+                    </div>
+                    <img src="/images/Frame-3.svg" alt="Deletar">
+                </li>
+                <li id="item3" class="item">
+                    <div class="content-list">
+                        <input type="radio">
+                        <label for="">Macarrão</label>
+                    </div>
+                    <img src="/images/Frame-3.svg" alt="Deletar">
+                </li>
+
+
+
+            </ul>
+
+        </main>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

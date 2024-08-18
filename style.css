@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ROOT DE VARIÁVEIS */
+:root {
+    font-size: 100%;
+    --bg-primary: #F4F5FB;
+    --bg-secondary: #FFFFFF;
+    --base-color: #CA3884;
+    --base-color-hover: #A52C6B;
+    --color-danger: #C93847;
+    --content-primary: #080b12;
+    --content-secondary: #374151;
+    --content-tertiary: #9ca3af;
+    --white: #ffffff;
+    --border: #d1d5db;
+    --border-hover: #b9c2d0;
+}
+
+/* BASE */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--content-primary);
+    background: var(--bg-primary);
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+}
+
+.container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 2rem;
+}
+
+header img {
+    width: 155px;
+    height: 40px;
+}
+
+main h1 {
+    font-size: 1.5rem;
+    line-height: 32px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+form input {
+    height: 44px;
+    border-radius: 16px;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    width: 75%;
+    color: var(--content-secondary);
+}
+
+form button {
+    height: 44px;
+    border-radius: 16px;
+    border: none;
+    width: 22%;
+    background-color: var(--base-color);
+    color: white;
+    font-size: 1rem;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--base-color-hover);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    width: 100%;
+    padding: 1rem;
+    height: 44px;
+    background-color: var(--bg-secondary);
+    margin-bottom: 0.75rem;
+    color: var(--content-secondary);
+}
+
+.image {
+    color: var(--content-tertiary);
+    font-size: 12px;
+    ;
+}
+
+@media(max-width: 767px) {
+
+    form {
+        display: block;
+    }
+
+    #newItem {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #btn {
+        width: 100%;
+    }
+}
