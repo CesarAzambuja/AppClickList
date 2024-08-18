@@ -114,11 +114,7 @@ li {
     color: var(--content-secondary);
 }
 
-.image {
-    color: var(--content-tertiary);
-    font-size: 12px;
-    ;
-}
+
 
 @media(max-width: 767px) {
 
