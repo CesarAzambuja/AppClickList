@@ -81,6 +81,10 @@ form input {
     color: var(--content-secondary);
 }
 
+input:checked~label {
+    text-decoration: line-through;
+    color: var(--content-tertiary);
+}
 form button {
     width: 25%;
     height: 44px;
